@@ -9,3 +9,11 @@ jobs:
         uses: orrgato/Github-Action-Experiments@main
         with: 
           input: true
+  Use-Kubescape-action:
+    runs-on: ubbuntu-latest
+    name: Scan Repository with kubescape
+    steps:
+      - name: Scan it
+        uses: orrgato/Kubescape-github-action@repo-scan
+        with:
+          scanRepository: "yes"
