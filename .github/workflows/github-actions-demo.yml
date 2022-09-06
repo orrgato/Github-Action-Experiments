@@ -10,7 +10,7 @@ jobs:
         with: 
           input: true
   Use-Kubescape-action:
-    runs-on: ubbuntu-latest
+    runs-on: ubuntu-latest
     name: Scan Repository with kubescape
     steps:
       - name: Scan it
